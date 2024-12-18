@@ -1,0 +1,90 @@
+        /* Estilos para el botón flotante */
+        #chatButton {
+            position: fixed;
+            bottom: 60px;
+            right: 10px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #0d6efd;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 1050;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: none;
+            transition: transform 0.3s ease;
+        }
+
+        #chatButton:hover {
+            transform: scale(1.1);
+        }
+
+        /* Estilos para el chat */
+        .chat-modal {
+            position: fixed;
+            bottom: 130px;
+            right: 10px;
+            width: 350px;
+            height: 500px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            z-index: 1049;
+            display: none; 
+        }
+
+        .chat-header {
+            padding: 15px;
+            background: #0d6efd;
+            color: white;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .chat-messages {
+            height: 350px;
+            padding: 15px;
+            overflow-y: auto;
+        }
+
+        .chat-input {
+            padding: 15px;
+            border-top: 1px solid #dee2e6;
+        }
+
+        .message {
+            margin-bottom: 10px;
+            max-width: 80%;
+        }
+
+        .user-message {
+            background: #e9ecef;
+            padding: 10px;
+            border-radius: 15px;
+            margin-left: auto;
+        }
+
+        .bot-message {
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        /* Animación para el modal */
+        .chat-modal.show {
+            display: block;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }

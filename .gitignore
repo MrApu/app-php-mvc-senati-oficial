@@ -1,0 +1,51 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos específicos de PHP
+/vendor/
+/composer.lock
+
+# Configuración local
+.env
+.env.*.local
+
+# Archivos temporales
+*.log
+*.cache
+*.tmp
+*.bak
+
+# Configuración de IDEs
+/.idea/
+/*.iml
+*.sublime-workspace
+.vscode/
+
+# Archivos de despliegue o pruebas
+/.env.testing
+/.phpunit.result.cache
+
+# Archivos y directorios generados
+/node_modules/
+/public/js/
+/public/css/
+/dist/
+/build/
+/coverage/
+/storage/
+# Logs y debug
+debug.log
+
+# Archivos de JavaScript/Node.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Paquetes específicos para hosting
+*.phar
+
+# Archivos de sistema y temporales
+*.swp
+*.swm
+*.zip
